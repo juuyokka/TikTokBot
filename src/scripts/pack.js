@@ -1,11 +1,13 @@
 const { readFileSync } = require('fs');
+const { basename } = require('path');
 const { create } = require('tar');
 const { gitignore } = require('globby');
 
 const ignore = readFileSync('./.gitignore').toString().split('\n');
 
 const filter = (path, stat) => {
-    const isGit = path.endsWith('.git') || path.endsWith('.gitignore');
+    const base = basename(path);
+    const isGit = base == '.git' || base == '.gitignore';
 
     return !gitignore.sync()(path) && !isGit;
 }
