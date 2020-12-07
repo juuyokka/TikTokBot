@@ -1,6 +1,6 @@
 # TikTokBot
 
-TikTokBot is a Discord bot that reads TikTok links and posts the videos directly into the chat
+TikTokBot is a Discord bot that reads TikTok links and posts the videos directly into chat.
 
 ## Installation
 
@@ -18,7 +18,9 @@ npm install OR yarn install
 
 ## Usage
 
-Rename `` to `token.ts` and replace text with your bot's token
+### Run on local machine
+
+Rename `.env.example` to `.env` and replace text with your bot's token
 
 ```conf
 TOKEN=BOT-TOKEN-HERE
@@ -31,6 +33,9 @@ npm run build and npm start
 OR
 yarn build and yarn start
 ```
+
+### Docker Image
+https://hub.docker.com/repository/docker/juuyokka/tiktokbot/
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
