@@ -1,8 +1,8 @@
 import { Message, MessageAttachment } from 'discord.js'
 import axios, { AxiosResponse } from 'axios'
 
-import getTikTokLink from './scripts/checkTikTok'
-import getTikTokCdnURL from './scripts/tikTokCdn'
+import getTikTokLink from './checkTikTok'
+import getTikTokCdnURL from './tikTokCdn'
 
 export default async (msg: Message) => {
     const tikTokLink = getTikTokLink(msg.content);

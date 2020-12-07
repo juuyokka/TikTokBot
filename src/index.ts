@@ -1,8 +1,9 @@
+import { config } from 'dotenv'
 import { Client } from 'discord.js'
 
-import token from './token'
+import handleMessage from './modules/handleMessage'
 
-import handleMessage from './handleMessage'
+process.env.TOKEN ?? config();
 
 const client = new Client();
 
@@ -17,4 +18,4 @@ client.on('ready', () => {
 
 client.on('message', handleMessage);
 
-client.login(token);
+client.login(process.env.TOKEN);

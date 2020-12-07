@@ -13,15 +13,15 @@ git clone --depth 1 https://github.com/juuyokka/TikTokBot.git
 Use `npm` or `yarn` to install the dependencies
 
 ```bash
-npm install OR yarn add
+npm install OR yarn install
 ```
 
 ## Usage
 
-Rename `exampleToken.ts` to `token.ts` and replace text with your bot's token
+Rename `` to `token.ts` and replace text with your bot's token
 
-```ts
-export default 'BOT TOKEN HERE'
+```conf
+TOKEN=BOT-TOKEN-HERE
 ```
 
 Build and run using `npm` or `yarn`
