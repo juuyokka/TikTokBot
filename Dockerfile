@@ -9,6 +9,7 @@ RUN npm run build
 # Stage 2: Copy Dist
 FROM zenika/alpine-chrome:with-puppeteer
 WORKDIR /usr/app
+USER root
 COPY package*.json ./
 RUN npm install --production
 COPY --from=0 /usr/app/dist ./dist
