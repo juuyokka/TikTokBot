@@ -18,6 +18,12 @@ npm install OR yarn install
 
 ## Usage
 
+### Heroku
+
+You can easilly deploy to Heroku with the following button
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/juuyokka/TikTokBot/tree/docker-and-heroku)
+
 ### Run on local machine
 
 Rename `.env.example` to `.env` and replace text with your bot's token
@@ -33,9 +39,3 @@ npm run build and npm start
 OR
 yarn build and yarn start
 ```
-
-### Docker Image
-https://hub.docker.com/repository/docker/juuyokka/tiktokbot/
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)

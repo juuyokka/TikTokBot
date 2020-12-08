@@ -1,0 +1,15 @@
+{
+  "name": "TikTokBot",
+  "description": "Discord bot that automatically sends TikTok videos from links in chat",
+  "keywords": [ "Discord.js", "Docker", "Puppeteer" ],
+  "repository": "https://github.com/juuyokka/TikTokBot",
+  "env": {
+    "TOKEN": {
+      "description": "Your Discord bot token"
+    },
+    "TIMEOUT": {
+      "description": "The amount of time to timeout if a message takes too long to send in milliseconds",
+      "value": "15000"
+    }
+  }
+}
