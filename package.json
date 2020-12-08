@@ -1,16 +1,20 @@
 {
   "name": "tiktokbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Discord bot that automatically sends TikTok videos from links in chat",
   "main": "./dist/index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/juuyokka/TikTokBot.git"
+  },
   "scripts": {
     "start": "node .",
     "dev": "concurrently \"tsc -w\" \"nodemon\"",
     "build": "tsc",
     "pack": "node ./src/scripts/pack.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [ "Discord.js", "Docker", "Puppeteer" ],
+  "author": "juuyokka .",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^14.14.10",
