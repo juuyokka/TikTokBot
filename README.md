@@ -1,4 +1,4 @@
-# TikTokBot
+![TikTokBot](assets/wordmark.svg)
 
 TikTokBot is a Discord bot that reads TikTok links and posts the videos directly into chat.
 
