@@ -12,9 +12,6 @@ export default async (tikTokLink: string) => {
     
     await page.goto('https://musicallydown.com/');
 
-    const wm_btn = (await page.$$('label'))[1]
-    await wm_btn.click({ 'delay': 50 })
-
     await page.type('#link_url', tikTokLink);
     await page.keyboard.press('Enter');
     await page.waitForNavigation();
