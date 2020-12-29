@@ -24,6 +24,8 @@ You can easilly deploy to Heroku with the following button
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+**You need to add puppeteer heroku buildpack to your Buildpacks** [Click here if you need help. this is where you should add or bot wont run.](https://cdn.discordapp.com/attachments/776404482002780191/793416722920505344/unknown.png)
+
 ### Run on local machine
 
 Rename `.env.example` to `.env` and replace text with your bot's token
